@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Centering Again</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+
+    .topRowFirst {
+
+       height: 60px;
+
+       min-height: 60px;
+
+       max-height: 60px;
+
+       line-height: 50px;
+
+    }
+
+
+    .middleHeight {
+
+       height: 100px;
+
+       min-height: 100px;
+
+       max-height: 100px;
+
+       text-align: center;
+
+       margin: 0 auto;
+
+      display: block;
+
+      font-size: 24px;
+
+      font-weight: bolder;
+
+      color: blue;
+
+      line-height: 100px;
+
+    }
+
+    .secondHeight img{
+
+       height: 90px;
+
+       min-height: 90px;
+
+       max-height: 90px;
+
+       height: 75%;
+
+       display: block;
+
+       margin: 0 auto;
+
+    }
+
+    .bottomHeight {
+
+       height: 120px;
+
+       min-height: 120px;
+
+       max-height: 120px;
+
+    }
+
+    .text{
+ text-align: center;
+ font-size: 20px;
+ font-style: italic;
+ color: pink;
+    }
+
+    #pic1{
+      padding-top: 5%;
+      padding-left: 40%
+    }
+
+    .pics2{
+      padding: 5% 10% 5% 15%;
+
+    }
+
+    .pics3{
+      padding-top: 5%;
+      padding-left: 40%
+    }
+
+    .relativeParent{
+      position: relative;
+    }
+
+  .relativeParent img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+  </style>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row"><!--header-->
+            <div class="col-md-2 randomColor topRowFirst"> </div>
+              <div class="col-md-4 randomColor topRowFirst"> </div>
+                <div class="col-md-2 randomColor topRowFirst text"> Home</div>
+                  <div class="col-md-2 randomColor topRowFirst text"> About Us</div>
+                    <div class="col-md-2 randomColor topRowFirst text">Contact </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 randomColor middleHeight"> 國日月好行然公停營全代消企底家可去，雨小上藝傳進量直落每久家、賽再非那要 </div><!--text-->
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 randomColor secondHeight"> <img src="images/star.png" alt="star iamge"/> </div><!--second text-->
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 randomColor bottomHeight"> <img id="pic1" src="images/picone.jpg" alt="coca-cola iamge"/> </div><!--gallery1-->
+              <div class="col-md-4 randomColor bottomHeight"> <img class="pics2" src="images/pictwo.jpg" alt="smoothie iamge"/>
+                <img class="pics2" src="images/picthree.jpg" alt="drink iamge 3"/></div>
+                <div class="col-md-4 randomColor bottomHeight"> <img class="pics3" src="images/picfour.jpg" alt="cup iamge"/><p class="text">
+                  Coffee
+                </p></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 randomColor bottomHeight relativeParent"> <img src="images/picsix.jpg" alt="cup iamge"/> </div><!--gallery2-->
+            <div class="col-md-4 randomColor bottomHeight"></div>
+            <div class="col-md-4 randomColor bottomHeight"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 randomColor bottomHeight"> </div><!--gallery3-->
+              <div class="col-md-4 randomColor bottomHeight"> </div>
+                <div class="col-md-4 randomColor bottomHeight"> </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+
+            return Math.floor(Math.random() * max + min);
+
+        }
+
+
+        $(document).ready(function() {
+
+
+            var bodyColumns = $(".randomColor");
+
+
+            bodyColumns.each(function() {
+
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+
+        })
+    </script>
+
+
+</body>
+
+</html>
