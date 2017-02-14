@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Larry the Leaser-Wireframe</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+
+    .header {
+
+       height: 120px;
+
+       min-height: 120px;
+
+       max-height: 120px;
+
+       text-align: center;
+
+       font-style: bold;
+
+       color: blue;
+
+       line-height: 120px;
+
+       font-size: 60px;
+
+    }
+
+
+    .navHeight {
+
+       height: 40px;
+
+       min-height: 40px;
+
+       max-height: 40px;
+
+       text-align: center;
+
+       font-style: bold;
+
+       color: blue;
+
+       line-height: 50px;
+
+       font-size: 24px;
+
+    }
+
+    .middleHeight {
+
+       height: 80px;
+
+       min-height: 80px;
+
+       max-height: 80px;
+
+    }
+
+    .infoHeight {
+
+       height: 820px;
+
+       min-height: 820px;
+
+       max-height: 820px;
+
+        font-size: 14px;
+
+    }
+
+    .footer {
+
+       height: 90px;
+
+       min-height: 90px;
+
+       max-height: 90px;
+
+       text-align: center;
+
+       font-style: bold;
+
+       color: blue;
+
+       line-height: 120px;
+
+       font-size: 60px;
+
+    }
+  </style>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 randomColor navHeight"> About Us </div>
+            <div class="col-md-3 randomColor navHeight"> Find a Car </div>
+            <div class="col-md-3 randomColor navHeight"> Membership Club </div>
+            <div class="col-md-3 randomColor navHeight"> Contact Us </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 randomColor header"> HEADER </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 randomColor middleHeight"> Compare Our Cars (link) </div>
+            <div class="col-md-4 randomColor middleHeight"> LEASE TODAY (link) </div>
+            <div class="col-md-4 randomColor middleHeight"> Contact Us (link)</div>
+        </div>
+
+                <div class="row">
+                    <div class="col-md-4 randomColor infoHeight"> IMAGE #1 </div>
+                    <div class="col-md-4 randomColor infoHeight"> <h3> Task Three: </h3>
+                      <p>
+                        My website design for Larry's Car Leasing company is effective, and will ultimately provide Larry
+                        with many customers. When I was considering the key elements a car leasing agency would require, the
+                        first thing I thought of was, of course, sales. Larry will require sales in order to remain in business, and therefore,
+                        my site incorperates many areas where drivers in need of leasing a vehicle can arrange a lease through the links on the website. This
+                        offers good usability for costumers, and therefore Larry's business will be able to remain in business. This was the first aspect I considered
+                        for the website, because I thought about the issues we outlined during your presentation regarding the author's website flaws. I ried to rectify these flaws on Larry's site.
+                        <br />
+                        Next, I also thought about what users will be looking for when they enter the site. users will surely want to, first and foremost, gain information about Larry's car selection,
+                        analyze the leasing company's prices, and compare different vehicles available to be leased. As a result, my site further provides effective usability for drivers in need of leasing a vehicle
+                        becuase I provide a link to all of that information right on the homepage. It's important to make your site clearly relay the information customers want to access, and therefore my site design for
+                        Larry's website will gurantee the business' success. I also provide a link ont he homepage to the Contact Us section of the website which is another important area ont he site that customers will need to access
+                        easily. I tried to keep usability and efficiency in mind when designing this website for Larry so that once customers enter the site, they stay until they have accessed all of the information they need, and ultimately
+                        lease a car from Larry.
+                        <br />
+                        Finally, I tried to increase the site functionality by desiging a minimalist website that only features the crucial information customers need to know. As a result, Larry will make sales because of the site's excellent usability element.
+                      </p>
+                     </div>
+                    <div class="col-md-4 randomColor infoHeight"> IMAGE #2</div>
+                </div>
+
+        <div class="row">
+            <div class="col-md-12 randomColor footer"> FOOTER </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+
+            return Math.floor(Math.random() * max + min);
+
+        }
+
+
+        $(document).ready(function() {
+
+
+            var bodyColumns = $(".randomColor");
+
+
+            bodyColumns.each(function() {
+
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+
+        })
+    </script>
+
+
+</body>
+
+</html>
