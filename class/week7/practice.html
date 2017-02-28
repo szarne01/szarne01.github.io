@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+
+    Hello World!
+
+    <div id="myDiv"> Look some text! </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script>
+//() means execute fucntion
+// double slash means ignore this line
+/*
+everything between this is ignored
+*/
+
+// alert("this is a popup")
+console.log("This is for debugging messages");
+var myvar;
+
+// in quotes is a string i.e. text
+var myAnotherVar = "Here is my another var";
+// alert (myAnotherVar);
+console.log(myAnotherVar)
+
+//concatenation- adding things together
+var myName= "Zarnett-Klein";
+var myFirstName= "Sarah";
+// alert ("My first name is" +myFirstName + "And my last name is" +myName);
+
+// {} code block
+function sayMyName(){
+// everything in code block will be executed
+console.log("Your name is"+ myName);
+}
+// calling the fucntion
+sayMyName();
+
+function sayMyName2(name){
+// everything in code block will be executed
+console.log("Your name is" +name);
+}
+sayMyName2("Sarah");
+sayMyName2("Mark");
+
+/*
+when the document is ready, JQuery gets the element with
+ID myDiv and calls the html function.
+The html function will replace the html within th element
+*/
+
+$(document).ready(function(){
+// alert("the document is ready!");
+$("#myDiv").html("Hey, i was able to change the DOM");
+$("#myDiv").append("<br />add somehting more!");
+});
+
+  </script>
+
+
+</body>
+
+</html>
