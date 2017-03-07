@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+
+#centerDiv{
+text-align: center;
+
+}
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="row">
+        <div id="carDiv" class="col-md-12"> </div>
+      </div>
+
+      <div class="row">
+          <div id="heartDiv" class="col-md-12"> </div>
+      </div>
+
+            <div class="row">
+                <div id="starDiv" class="col-md-12"> </div>
+            </div>
+
+            <div class="row">
+                <div id="smileDiv" class="col-md-12"> </div>
+            </div>
+
+  </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+
+  // Our progam
+  //three primitive types
+var myString = "a string";
+var myNumber = 2;
+var myVar = "2";
+var myBoolean = false;
+var myVar2 = "true";
+
+  // Array
+  // Declaring an empty array
+var myArray = [];
+
+var myFullArray = ["Calen", "Nicole", "Evan"];
+
+console.log(myFullArray[0]);
+console.log("MyFullArray 2nd value =" +myFullArray[1]);
+
+var myMixArray = [3, "David", false];
+myMixArray.push("another value");
+console.log("myMixArray values: " +myMixArray);
+
+  // Type, price, mileage, colour, fuel type, src
+  // When the page loads, we go to database and get some info about a car
+var car= {
+type: "SUV",
+price: "45000",
+mileage: 24,
+colour: "magenta",
+fuelType: "electric",
+src: "images/car1.jpg",
+message: function(){
+    console.log("A car is useful!");
+  }
+};
+
+  // object name.property
+console.log(car.type);
+console.log(car.price);
+console.log(car.message);
+
+$(document).ready(function(){
+/*
+$("#carDiv").html("<div id='centerDiv'></div>');
+$("#carDiv").html("<div>"+car.type+"</div>");
+$("#carDiv").append("<img src='"+car.src +"'/>");
+$("#carDiv").append("<div>"+car.price+"</div>");
+*/
+
+var myHtml= "<div id='centerDiv'>'"+
+            "<div>"+car.type+"</div>"+
+            "<img src='"+car.src +"'/>"+
+            "<div>"+car.price+"</div>"+
+            "</div>";
+            $('#carDiv').html(myHtml);
+
+
+  /*
+  Product
+  people
+  anything
+
+  2 objects, minimum 4 properties, at least one image. write to own row
+  */
+
+  var heart= {
+  type: "Love",
+  size: "big",
+  colour: "red",
+  meaning: "I love you",
+  src: "images/heart1.jpg",
+  message: function(){
+      console.log("Hearts are amazing!");
+    }
+  };
+
+  var myHtml2= "<div id='centerDiv'>'"+
+              "<div>"+heart.type+"</div>"+
+              "<img src='"+heart.src +"'/>"+
+              "<div>"+heart.size+"</div>"+
+              "</div>";
+              $('#heartDiv').html(myHtml2);
+
+              var star= {
+              type: "Shining",
+              size: "Tiny",
+              colour: "Golden",
+              meaning: "You are a shining star!",
+              src: "images/star.jpg",
+              message: function(){
+                  console.log("Make a wish on a star!");
+                }
+              };
+
+              var myHtml3= "<div id='centerDiv'>'"+
+                          "<div>"+star.type+"</div>"+
+                          "<img src='"+star.src +"'/>"+
+                          "<div>"+star.size+"</div>"+
+                          "</div>";
+                          $('#starDiv').html(myHtml3);
+
+                          var smile= {
+                          type: "Smiley",
+                          size: "BIG SMILES",
+                          colour: "Yellow",
+                          meaning: "Smile all day every day",
+                          src: "images/smile.jpg",
+                          message: function(){
+                              console.log("You should always smile");
+                            }
+                          };
+
+                          var myHtml4= "<div id='centerDiv'>'"+
+                                      "<div>"+smile.type+"</div>"+
+                                      "<img src='"+smile.src +"'/>"+
+                                      "<div>"+smile.size+"</div>"+
+                                      "</div>";
+                                      $('#smileDiv').html(myHtml4);
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>
