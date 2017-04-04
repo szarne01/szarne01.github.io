@@ -1,0 +1,60 @@
+[{
+        "phone": "Samsung",
+        "type": "Galaxy S7",
+        "features": "With Tab Large",
+        "price": "100.00"
+    },
+    {
+            "phone": "Iphone",
+            "type": "SE 16 GB",
+            "features": "iSight Camera Focus",
+            "price": "200.00"
+        },
+        {
+                "phone": "Blackberry",
+                "type": "Torch",
+                "features": "Sliding Keyboard",
+                "price": "40.00"
+            },
+            {
+                    "phone": "Samsung",
+                    "type": "Galaxy S6",
+                    "features": "Touch Screen",
+                    "price": "90.00"
+                },
+                {
+                        "phone": "IPhone",
+                        "type": "5S 32 GB",
+                        "features": "With 3D Touch Feature",
+                        "price": "175.99"
+                    },
+                    {
+                            "phone": "IPhone",
+                            "type": "6S 16 GB",
+                            "features": "With 3D Touch",
+                            "price": "789.99"
+                        },
+                        {
+                                "phone": "Ausus",
+                                "type": "Zenfone 32 GB",
+                                "features": "4GB RAM ",
+                                "price": "1358.00"
+                            },
+                            {
+                                    "phone": "IPhone 6 Plus",
+                                    "type": "64GB",
+                                    "features": "With 3D Touch Feature",
+                                    "price": "499.99"
+                                },
+                                {
+                                        "phone": "IPhone 7",
+                                        "type": "16GB",
+                                        "features": "PLastic Outer Coating",
+                                        "price": "899.99"
+                                    },
+                                    {
+                                            "phone": "IPhone 7 Plus",
+                                            "type": "64 GB",
+                                            "features": "With New Camera Features",
+                                            "price": "1999.99"
+                                        }]
